@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZAV_Task_01", "ZAV_Task_01\ZAV_Task_01.csproj", "{824A5A03-6B3A-440C-ABA9-BD24221238BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZAV_Task_01", "ZAV_Task_01\ZAV_Task_01.csproj", "{824A5A03-6B3A-440C-ABA9-BD24221238BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZAV_Task_02", "ZAV_Task_02\ZAV_Task_02.csproj", "{18FA4E7F-821C-4515-A3B9-DF51C45EB6C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZAV_Task_02", "ZAV_Task_02\ZAV_Task_02.csproj", "{18FA4E7F-821C-4515-A3B9-DF51C45EB6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZAV_Task_03", "ZAV_Task_03\ZAV_Task_03.csproj", "{F00F3559-2E79-4EED-9E47-5D785FE0E102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{18FA4E7F-821C-4515-A3B9-DF51C45EB6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18FA4E7F-821C-4515-A3B9-DF51C45EB6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18FA4E7F-821C-4515-A3B9-DF51C45EB6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00F3559-2E79-4EED-9E47-5D785FE0E102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00F3559-2E79-4EED-9E47-5D785FE0E102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00F3559-2E79-4EED-9E47-5D785FE0E102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00F3559-2E79-4EED-9E47-5D785FE0E102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
