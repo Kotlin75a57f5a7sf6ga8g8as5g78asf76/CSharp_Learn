@@ -62,6 +62,14 @@ namespace ZAV_Task_04
 
             while (playerHealth > 0 && bossHealth > 0)
             {
+                if (turn == false)
+                {
+                    Console.WriteLine($"{typeOfBossString} атаковал(а) вас на {damage = random.Next(50, 101)}");
+                    Console.WriteLine();
+                    playerHealth -= damage;
+                    turn = true;
+                }
+
                 Console.WriteLine($"Здоровье игрока: {playerHealth}");
                 Console.WriteLine($"Здоровье босса:  {bossHealth}");
                 Console.WriteLine($"Эффекты:         {playerEffects}");
@@ -78,6 +86,7 @@ namespace ZAV_Task_04
                 Console.WriteLine("Ваш выбор:");
                 playerAttack = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("");
+
                 switch (playerAttack)
                 {
                     case 0:
@@ -132,20 +141,17 @@ namespace ZAV_Task_04
                         playerHealthFull -= (playerHealthFull / 100) * 25;
                         bossHealth -= (bossHealth / 100) * 25;
                         break;
-                    case 6:
-                        typeOfBossString = "Элементаль Магмы";
-                        break;
-                    case 7:
-                        typeOfBossString = "Могучая Горгона";
-                        break;
-                    case 8:
-                        typeOfBossString = "Великий Василиск";
-                        break;
-                    case 9:
-                        typeOfBossString = "Гидра Хаоса";
-                        break;
                 }
+                Console.WriteLine($"{typeOfBossString} атаковал(а) вас на {damage = random.Next(50, 101)}");
+                Console.WriteLine();
+                playerHealth -= damage;
             }
+            if (bossHealth <= 0 )
+            {
+                Console.WriteLine($"Вы победили {typeOfBossString}. У вас осталось {playerHealth} здоровья.");
+            }
+            else
+                Console.WriteLine($"Вы проиграли {typeOfBossString}. У вас босса осталось {bossHealth} здоровья.");
         }
     }
 }
