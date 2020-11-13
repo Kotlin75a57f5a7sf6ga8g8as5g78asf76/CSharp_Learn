@@ -123,7 +123,7 @@ namespace Hangman_game
 
 				do
 				{
-					letter = (char)random.Next(1072, 1103);
+					letter = (char)random.Next(65, 11030);
 				} while (!randomWord.Contains(letter) || hintsAdded.Contains(letter));
 
 				for (int j = 0; j < randomWord.Length; j++)
@@ -291,5 +291,5 @@ namespace Hangman_game
 			}
 
 		}
-	}
+    }
 }

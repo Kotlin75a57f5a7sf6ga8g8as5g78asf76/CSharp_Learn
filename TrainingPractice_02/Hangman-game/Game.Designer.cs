@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.textBoxLetter = new System.Windows.Forms.TextBox();
             this.textBoxChars = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -191,6 +192,7 @@
             this.Controls.Add(this.textBoxChars);
             this.Controls.Add(this.pictureHangman);
             this.Controls.Add(this.textBoxLetter);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
             this.Text = "Игра";
             ((System.ComponentModel.ISupportInitialize)(this.pictureHangman)).EndInit();
